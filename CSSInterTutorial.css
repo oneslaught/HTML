@@ -1,0 +1,64 @@
+body {
+    color: white;
+    background-color: #0A3542;
+}
+
+#top {
+    background-color: #8ea0fa;
+    padding: 1em
+}
+
+#top h2 {
+    color: #00092b;
+}
+
+#top p {
+    color: #000000;
+    font-weight: bold;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:active {
+    color: #723999;
+}
+
+a:hover {
+    text-decoration: none;
+    color: blue;
+    background-color: lightcyan;
+}
+
+input:focus, textarea:focus {
+    background: #eee;
+}
+
+h1:first-child {
+    font-weight: lighter;
+    font-size: 40px;
+    color:#eee
+}
+
+em:last-child {
+    color: #fc7496;
+}
+
+p {
+    margin: 1px 5px 10px 20px;
+    border: 4px #ffffff solid;
+}
+
+p {
+    font: 14px/1.5 "Times New Roman", times, serif;
+    padding: 30px 10px;
+    border: 1px black solid;
+    border-width: 1px 5px 5px 1px;
+    border-color: red green blue yellow;
+    margin: 10px 50px;
+}   
