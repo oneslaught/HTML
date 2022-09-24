@@ -69,7 +69,7 @@ li {
 }
 
 li:before {
-    content: "СПИСОК! ";
+    content: "СПИСОК!  ";
     background: red;
     color: #fc0;
 }
@@ -89,4 +89,14 @@ li:before {
     font-weight: bold;
 }
 
+/* Абсолютное позиционирование уходит прямо в жопу, поэтому я лучше не вставлю этот ужас сюда */
+
+#navigation {
+    float: left;
+    width: 200px;
+}
+
+#content {
+    margin-left: 200px;
+}
 
