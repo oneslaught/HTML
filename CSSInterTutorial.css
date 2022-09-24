@@ -46,19 +46,47 @@ h1:first-child {
 }
 
 em:last-child {
+    color: #8ea0fa;
     color: #fc7496;
 }
 
-p {
+#top {
     margin: 1px 5px 10px 20px;
     border: 4px #ffffff solid;
 }
-
-p {
+#top {
     font: 14px/1.5 "Times New Roman", times, serif;
     padding: 30px 10px;
     border: 1px black solid;
     border-width: 1px 5px 5px 1px;
     border-color: red green blue yellow;
     margin: 10px 50px;
-}   
+}
+
+li {
+    display: block;
+    padding: 20px 10px;
+}
+
+li:before {
+    content: "СПИСОК! ";
+    background: red;
+    color: #fc0;
+}
+
+#text h3 { 
+    font-size: 18px;
+}
+
+#text h3:first-letter {
+    color: #eb4efc;
+    font-size: 40px;
+    float: left;
+}
+
+#text h3:first-line {
+    color: #d7ccff;
+    font-weight: bold;
+}
+
+
