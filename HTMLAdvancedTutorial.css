@@ -1,0 +1,16 @@
+body {
+    background-color: #002f38;
+    color: white;
+    text-align:  center;
+}
+
+table, th, td {
+    border: 1px solid white;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+  }
+
+col.alternative {
+    background: #5e005a;
+}
