@@ -14,3 +14,9 @@ table, th, td {
 col.alternative {
     background: #5e005a;
 }
+
+a {
+    color: #e0ff6e;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
