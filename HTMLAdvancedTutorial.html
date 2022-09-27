@@ -9,6 +9,7 @@
     <h1>БОЛЬШОЙ ТЕКСТ 2</h1>
     <p><b>Я пойду какать <time datetime="2077-11-21">в понедельник 21-го Ноября 2077</time>.</b></p>
     <i>Антонио любит пиццу</i>
+    <!-- Не добавлял sub и sup потому что они больше не презентабельны -->
     
     <blockquote>
         <p>Баба капа <hr>не любит <mark>мёд</mark></p>
@@ -81,5 +82,44 @@
     ссылка</a>, вот так вот</p>
     <em>Нажать <q>Alt</q> + <q>o</q></em><br>
     <a href="https://youtu.be/HFedC2WLBoA" accesskey="o">Ещё одно произведение исскуства</a>
+
+    <p><form></p>
+        <label for="yourName">NI</label>
+        <input name="yourName" id="yourName">
+    </form><br>
+
+    <form action="somescript.php" >
+        <fieldset>
+            <legend><strong>ОБЯЗАТЕЛЬНО ЗАПОЛНИТЬ В ЦЕЛЯХ ВАШЕЙ БЕЗОПАСНОСТИ!</strong></legend>
+            <p>Номер кредитой карты <input name="firstName"></p>
+            <p>3 цифры на обороте <input name="lastName"></p>
+        </fieldset>
+        <fieldset>
+            <legend><strong>НЕ МЕНЕЕ ВАЖНО!</strong></legend>
+            <p>Элекстронная почта <textarea name="address"></textarea></p>
+            <p>Пароль от эл. почты <input name="postcode"></p>
+        </fieldset>
+    <p></form></p>
+
+    <!-- не ну тут уже полномочия моей фантазии так сказать всё -->
+    <select name="country">
+        <optgroup label="Africa">
+            <option value="gam">Gambia</option>
+            <option value="mad">Madagascar</option>
+            <option value="nam">Namibia</option>
+        </optgroup>
+        <optgroup label="Europe">
+            <option value="fra">France</option>
+            <option value="rus">Russia</option>
+            <option value="uk">UK</option>
+        </optgroup>
+        <optgroup label="North America">
+            <option value="can">Canada</option>
+            <option value="mex">Mexico</option>
+            <option value="usa">USA</option>
+        </optgroup>
+    </select>
+
+    
 </body>
 </html>
