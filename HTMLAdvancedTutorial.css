@@ -24,3 +24,15 @@ a {
 strong {
     color: #ff0000;
 }
+
+input[type=search] { background: url(https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__340.jpg) right no-repeat }
+
+input[type=email]:valid { background: powderblue }
+input[type=email]:invalid { background: red }
+input[type=url]:valid { background: yellow }
+input[type=url]:invalid { background: red }
+input[type=tel]:valid { background: peru }
+input[type=tel]:invalid { background: red }
+
+input[type=month] { background: lightgreen }
+
