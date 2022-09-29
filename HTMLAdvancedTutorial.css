@@ -25,6 +25,10 @@ strong {
     color: #ff0000;
 }
 
+h2 {
+    color: #96e5ff;
+}
+
 input[type=search] { background: url(https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__340.jpg) right no-repeat }
 
 input[type=email]:valid { background: powderblue }
@@ -35,4 +39,6 @@ input[type=tel]:valid { background: peru }
 input[type=tel]:invalid { background: red }
 
 input[type=month] { background: lightgreen }
+
+
 
