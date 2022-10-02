@@ -17,6 +17,8 @@ b {
     margin: 10;
     padding: 0;
 }
+
+@import url(что-то.css);
 #genus_examples > li {
      border: 3.5px solid #c2005e; 
 }
@@ -52,3 +54,15 @@ h2 + p {
     box-shadow: 5px 5px 3px 1px #70006b;
 }
 
+abbr[title] {
+    border-bottom: 1px dotted #ccc
+}
+
+input[type=text][disabled] {
+    border: 1px solid #ccc 
+}
+
+[href^=http] {
+    padding-right: 10px;
+    background: url(mmmm.png) right no-repeat;
+}
