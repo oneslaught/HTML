@@ -66,3 +66,14 @@ input[type=text][disabled] {
     padding-right: 10px;
     background: url(mmmm.png) right no-repeat;
 }
+
+a {
+    color: #f27474
+}
+
+a:link {
+    transition: color .7s, font-size 2s;
+}
+a:hover {
+    color: #73ff92;
+}
