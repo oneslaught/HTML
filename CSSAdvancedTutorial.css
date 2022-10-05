@@ -8,6 +8,16 @@ h1 {
     color: rgba(255, 255, 255, 0.9);
 }
 
+#h2t {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-shadow: -1.5px 1px 2px #ff75c3;
+}
+
+.Emoji {
+    text-shadow: -1px 1px 3px #5cbeff;
+}
+
 b {
     font-family: cursive;
     text-shadow: -2px 2px 3px #999;
@@ -123,4 +133,114 @@ pre {
     -webkit-transform: scale(0.85) rotate(-10deg) translate(15px, 10px);
 	-ms-transform: scale(0.85) rotate(-10deg) translate(15px, 10px);
 	transform: scale(0.85) rotate(-10deg) translate(15px, 10px);
+}
+
+span.gradient-text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(to right, #e60ba9, #855a9e, #18f0bc);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+span.gradient-text2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: radial-gradient(circle, yellow, #ff5500);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+span.gradient-text3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: repeating-linear-gradient(to right, #ffffff, #83d487 10px, #ffffff 20px);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.clearfix {
+    clear: left;
+}
+
+#rgradient1, #rgradient2, #rgradient3, #rgradient4 {
+    border: 3px solid #ffe854;
+}
+
+#lgradient1, #lgradient2, #lgradient3, #lgradient4, #rgradient1, #rgradient2, #rgradient3, #rgradient4 {
+    display: block;
+    float: left;
+    white-space: normal;
+    margin: 0 50px 50px 0;
+    width: 200px;
+	height: 200px;
+    border: 3px solid #85ceff;
+}
+
+#bgradient {
+    display: block;
+    float: left;
+    white-space: normal;
+    margin: 0 50px 50px 0;
+    width: 200px;
+	height: 200px;
+    background: linear-gradient(135deg, #004d0a 10%, #00ffaa 60%, #aeff80 90%);
+    border: 3px solid #79de78;
+}
+
+#regradient1, #regradient2 {
+    display: block;
+    float: left;
+    white-space: normal;
+    margin: 0 50px 50px 0;
+    width: 200px;
+	height: 200px;
+    border: 3px solid #79de78;
+}
+
+#lgradient1 {
+	background: linear-gradient(#22e6b9, #7525b9);
+}
+
+#lgradient2 {
+	background: linear-gradient(to right, #22e6b9, #7525b9);
+    background: -webkit-linear-gradient(to right, #22e6b9, #7525b9); 
+}
+
+#lgradient3 {
+	background: linear-gradient(to bottom right, #22e6b9, #7525b9);
+    background: -webkit-linear-gradient(to bottom right, #22e6b9, #7525b9); 
+}
+
+#lgradient4 {
+	background: linear-gradient(20deg, #22e6b9, #7525b9);
+    background: -webkit-linear-gradient(20deg, #22e6b9, #7525b9); 
+}
+
+#rgradient1 {
+    background: radial-gradient(yellow, #ff8400);
+    background: -webkit-radial-gradient(yellow, #ff8400);
+}
+
+#rgradient2 {
+    background: radial-gradient(circle, yellow, #ff8400);
+    background: -webkit-radial-gradient(circle, yellow, #ff8400);
+}
+
+#rgradient3 {
+    background: radial-gradient(circle closest-side, yellow, #ff8400);
+    background: -webkit-radial-gradient(circle closest-side, yellow, #ff8400);
+}
+
+#rgradient4 {
+    background: radial-gradient(at top left, yellow, #ff8400);
+    background: -webkit-radial-gradient(at top left, yellow, #ff8400);
+}
+
+#regradient1 {
+    background: repeating-linear-gradient(#ffffff, #004a04 15px, #ffffff 30px);
+}
+
+#regradient2 {
+    background: repeating-radial-gradient(#004a04, #004a04 15px, #ffffff 15px, #ffffff 25px);
 }
