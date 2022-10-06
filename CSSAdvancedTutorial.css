@@ -4,9 +4,9 @@ body {
     text-align:  center;
 }
 
-@media screen and (max-width: 1000px) {
+/* @media screen and (max-width: 1000px) {
 
-    .h2t { width: 100% }
+    .Что-то { width: 100% }
 
 }
 
@@ -24,6 +24,26 @@ body {
     }
 
 }
+
+@media screen and (orientation: landscape) {
+
+    #То { float: left }
+
+}
+
+@media screen and (orientation: portrait) {
+
+    #Оно { float: none }
+
+}
+
+@media screen and (min-device-height: 768px) and (max-device-width: 1024px) {
+
+}
+
+@media screen and (device-aspect-ratio: 16/9) {
+
+} */
 
 h1 {
     color: rgba(255, 255, 255, 0.9);
