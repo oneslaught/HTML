@@ -4,6 +4,27 @@ body {
     text-align:  center;
 }
 
+@media screen and (max-width: 1000px) {
+
+    .h2t { width: 100% }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    #Ещё_что_то { float: none }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    #Другое aside {
+        float: none;
+        display: block;
+    }
+
+}
+
 h1 {
     color: rgba(255, 255, 255, 0.9);
 }
@@ -167,7 +188,7 @@ span.gradient-text3 {
     border: 3px solid #ffe854;
 }
 
-#lgradient1, #lgradient2, #lgradient3, #lgradient4, #rgradient1, #rgradient2, #rgradient3, #rgradient4 {
+#lgradient1, #lgradient2, #lgradient3, #lgradient4 {
     display: block;
     float: left;
     white-space: normal;
@@ -175,6 +196,16 @@ span.gradient-text3 {
     width: 200px;
 	height: 200px;
     border: 3px solid #85ceff;
+}
+
+#rgradient1, #rgradient2, #rgradient3, #rgradient4 {
+    display: block;
+    float: left;
+    white-space: normal;
+    margin: 0 50px 50px 0;
+    width: 200px;
+	height: 200px;
+    border: 3px solid #ffcc96;
 }
 
 #bgradient {
