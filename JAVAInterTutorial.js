@@ -42,3 +42,16 @@ doSomething();
 $('#btn').click(function () {
     // Что-то
 });
+
+// Должно работать, но так как у меня руки из жопы то нет
+window.onload = function() {
+    function value(x, y) {
+        return (x +(Math.random() * (y - x)));
+    }
+    var object = " ";
+    for (var i = 0; i < 100; i++) {
+        var a = value(2, 30);
+        object += '<div class="object" style="height:  ' + a + 'px; width: ' + a + 'px; background-color: rgba('+value(0, 300)+','+value(0, 300)+','+value(0, 300)+'); animation-duration:'+value(10, 30)+'s; top:'+value(0, 100)+'%; left: '+value(0, 100)+'%;"></div>'
+    }
+    document.body.innerHTML = object;
+};
