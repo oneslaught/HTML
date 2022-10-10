@@ -1,5 +1,6 @@
 body {
-    background-color: #002912;
+    background-color: rgb(31, 31, 31);
+    overflow: hidden;
     color: rgb(255, 255, 255);
     text-align:  center;
 }
@@ -11,5 +12,21 @@ h1 {
 
 p {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+ /* Должно работать, но так как у меня руки из жопы то нет */
+.object {
+    position: relative;
+    border-radius: 20px;
+    animation: anime infinite;
+}
+
+@keyframes identifier {
+    from {
+        transform: rotate(0deg,) translateX(100px);
+    }
+    to {
+        transform: rotate(360deg,) translateX(100px); 
+    }
 }
 
