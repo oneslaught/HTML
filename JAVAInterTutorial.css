@@ -30,3 +30,12 @@ p {
     }
 }
 
+#pborder {
+    display: block;
+    height: 200px;
+    width: 200px;
+    border: 10px solid;
+    padding: 10px;
+    border-image-source: linear-gradient(45deg, #18f0bc, #885a9e, #e60ba9);
+    border-image-slice: 1;
+}
