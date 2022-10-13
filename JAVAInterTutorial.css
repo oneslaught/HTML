@@ -14,28 +14,13 @@ p {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
- /* Должно работать, но так как у меня руки из жопы то нет */
 .object {
     position: relative;
     border-radius: 20px;
-    animation: anime infinite;
+    animation: anime ;
+    transform: scale(0);
 }
 
-@keyframes identifier {
-    from {
-        transform: rotate(0deg,) translateX(100px);
-    }
-    to {
-        transform: rotate(360deg,) translateX(100px); 
-    }
-}
-
-#pborder {
-    display: block;
-    height: 200px;
-    width: 200px;
-    border: 10px solid;
-    padding: 10px;
-    border-image-source: linear-gradient(45deg, #18f0bc, #885a9e, #e60ba9);
-    border-image-slice: 1;
-}
+@keyframes anime {
+    0% { transform: scale(1); }
+  }
