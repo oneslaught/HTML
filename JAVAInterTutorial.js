@@ -33,21 +33,22 @@ window.onload = function() {
         return (x +(Math.random() * (y - x)));
     }
     let object = " ";
-    for (let i = 0; i < 100; i++) {
+    setInterval(() => {
         const a = value(2, 30);
         const elem = document.createElement("div"); 
-        const duration = value(0, 100);
+        const duration = value(10, 12);
         elem.className = "object"
-        elem.id = i
         Object.assign(elem.style, {
             "height": `${a}px`,
             "width":  `${a}px`,
             "background-color": `rgba(${value(0, 300)},${value(0, 300)},${value(0, 300)})`,
-            "animation-duration": `${value(10, 12)}s`,
+            "animation-duration": `${duration}s`,
             "top": `${value(0, 100)}%`,
             "left": `${value(0, 100)}%`
         })
         document.body.appendChild(elem)
-        setTimeout(elem, duration)
-    }
+        setTimeout(() => {
+            document.body.removeChild(elem)
+        }, duration*1000)
+    }, 500);
 };
