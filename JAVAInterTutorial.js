@@ -52,3 +52,8 @@ window.onload = function() {
         }, duration*1000)
     }, 500);
 };
+
+// не находит iQuery
+$("#btn").click(function () {
+    alert("mmm")
+});
