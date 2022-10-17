@@ -1,33 +1,3 @@
-const handleClick = function (event) {
-    // Что-то
-};
-
-const req = new XMLHttpRequest();
-req.onload = function (event) { /* Что-то */ };
-req.open('get', 'some-file.txt', true);
-req.send();
-
-const jsonString = JSON.stringify({
-    make: "Пицца",
-    model: "Муха",
-    miles: 8800
-});
-
-const car = JSON.parse(jsonString);
-car.model = "W.W";
-
-console.log(window.innerHeight);
-
-const doSomething = function () {
-    const a = 10;
-const doSomethingElse = function () {
-    console.log(a);
-};
-doSomethingElse();
-};
-
-doSomething();
-
 window.onload = function() {
     function value(x, y) {
         return (x +(Math.random() * (y - x)));
@@ -53,7 +23,6 @@ window.onload = function() {
     }, 500);
 };
 
-// не находит iQuery
 $("#btn").click(function () {
-    alert("mmm")
+    alert("ААААААААА")
 });
