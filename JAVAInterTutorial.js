@@ -21,8 +21,8 @@ window.onload = function() {
             document.body.removeChild(elem)
         }, duration*1000)
     }, 500);
-};
 
-$("#btn").click(function () {
-    alert("ААААААААА")
-});
+    $("#btn").click(function () {
+        alert("ААААААААА")
+    });
+};
