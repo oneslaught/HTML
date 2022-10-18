@@ -19,7 +19,7 @@ window.onload = function() {
         document.body.appendChild(elem)
         setTimeout(() => {
             document.body.removeChild(elem)
-        }, duration*1000)
+        }, duration*100)
     }, 500);
 
     $("#btn").click(function () {
