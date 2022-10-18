@@ -19,8 +19,8 @@ window.onload = function() {
         document.body.appendChild(elem)
         setTimeout(() => {
             document.body.removeChild(elem)
-        }, duration*100)
-    }, 500);
+        }, duration*1000)
+    }, 1000);
 
     $("#btn").click(function () {
         alert("Не тыкай меня, я стесняюсь 😳")
