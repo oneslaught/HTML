@@ -26,4 +26,9 @@ window.onload = function() {
         alert("Не тыкай меня, я стесняюсь 😳")
     });
     $('h3').css('background', 'green').height(100);
+  
+    var currentHeight = 
+    $('h3').height(),
+        currentColor =
+    $('h3').css('color');
 };
