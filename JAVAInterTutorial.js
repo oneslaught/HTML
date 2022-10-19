@@ -25,4 +25,5 @@ window.onload = function() {
     $("#btn").click(function () {
         alert("Не тыкай меня, я стесняюсь 😳")
     });
+    $('h3').css('background', 'green').height(100);
 };
