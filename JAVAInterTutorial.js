@@ -31,9 +31,8 @@ window.onload = function() {
 
 const currentHeight = $('i').height(),
     currentColor = $('i').css('green');
+$.isArray([1, 2, 3]);
 
-    $.isArray([1, 2, 3]);
+$.isFunction(function () { });
 
-    $.isFunction(function () { });
-
-    $.isNumeric(10);
+$.isNumeric(10);
