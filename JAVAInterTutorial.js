@@ -25,4 +25,15 @@ window.onload = function() {
     $("#btn").click(function () {
         alert("Не тыкай меня, я стесняюсь 😳")
     });
+
+    $('i').css('background', '#4CAF50');
 };
+
+const currentHeight = $('i').height(),
+    currentColor = $('i').css('green');
+
+    $.isArray([1, 2, 3]);
+
+    $.isFunction(function () { });
+
+    $.isNumeric(10);
