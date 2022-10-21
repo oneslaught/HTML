@@ -27,6 +27,17 @@ window.onload = function() {
     });
 
     $('i').css('background', '#4CAF50');
+
+    const div = document.createElement('div');
+    div.textContent = "Больше ";
+    div.setAttribute('class', 'note');
+    document.body.appendChild(div);
+
+    var span = document.createElement('span');
+    span.textContent = "буковок";
+    div.appendChild(span);
+
+    div.parentNode.removeChild(div);
 };
 
 const currentHeight = $('i').height(),
