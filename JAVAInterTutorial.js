@@ -40,44 +40,8 @@ window.onload = function() {
     div.parentNode.removeChild(div);
 
     const canvas = document.querySelector('canvas'),
-    ctx = canvas.getContext('2d');
-
-    const resize = function () {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    };
-
-    window.addEventListener('resize', resize);
-
-    window.addEventListener('load', function () {
-
-    resize();
-
-    let pos, vel;
-    pos = {
-        x: 10,
-        y: 10
-    };
-    vel = {
-        x: 1,
-        y: 1
-    };
-
-    const loop = function () {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        pos.x += vel.x;
-        pos.y += vel.y;
-        if (pos.x < 5 || pos.x > canvas.width - 5) {
-        vel.x *= -1;
-        }
-        if (pos.y < 5 || pos.y > canvas.height - 5) {
-        vel.y *= -1;
-        }
-        ctx.fillRect(pos.x - 5, pos.y - 5, 10, 10);
-    };
-
-    setInterval(loop, 1000 / 60);
-    });
+        ctx = canvas.getContext('2d');
+    ctx.fillRect(125, 0, 50, 50);
 };
 
 const currentHeight = $('i').height(),
@@ -87,3 +51,16 @@ $.isArray([1, 2, 3]);
 $.isFunction(function () { });
 
 $.isNumeric(10);
+
+localStorage.setItem('Пароль от почки', JSON.stringify({
+    username: 'Почка',
+    api_key: '123456789'
+}));
+
+const user = JSON.parse(localStorage.getItem('Пароль от почки'));
+
+const lowerCaseString = 'водичка делает буль-буль';
+
+if (lowerCaseString.match(regex)) {
+    alert('буль-буль');
+}
