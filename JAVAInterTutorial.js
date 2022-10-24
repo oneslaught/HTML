@@ -61,6 +61,12 @@ const user = JSON.parse(localStorage.getItem('Пароль от почки'));
 
 const lowerCaseString = 'водичка делает буль-буль';
 
-if (lowerCaseString.match(regex)) {
-    alert('буль-буль');
-}
+const saver = function (value) {
+    return function () {
+        return value;
+    };
+};
+
+const retriever = saver("Не подтверждайте действие на странице 127.0.0.1:5500");
+
+alert(retriever());
