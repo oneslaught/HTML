@@ -22,10 +22,15 @@ window.onload = function() {
         }, duration*1000)
     }, 500);
 
-    $("#btn").click(function () {
-        alert("Не тыкай меня, я стесняюсь 😳")
-    });
-
+    const btn = document.createElement('input');
+    btn.id = 'btn';
+    btn.type = 'button';
+    btn.value = 'Button';
+    btn.onclick = function(){
+        btn.style.backgroundColor = `hsl(${Math.random()*255},100%,75%)`
+}
+    document.body.appendChild(btn);
+    
     $('i').css('background', '#4CAF50');
 
     const div = document.createElement('div');
@@ -37,11 +42,7 @@ window.onload = function() {
     span.textContent = "буковок";
     div.appendChild(span);
 
-    div.parentNode.removeChild(div);
-
-    const canvas = document.querySelector('canvas'),
-        ctx = canvas.getContext('2d');
-    ctx.fillRect(125, 0, 50, 50);
+    div.parentNode.removeChild(div); 
 };
 
 const currentHeight = $('i').height(),
@@ -60,13 +61,3 @@ localStorage.setItem('Пароль от почки', JSON.stringify({
 const user = JSON.parse(localStorage.getItem('Пароль от почки'));
 
 const lowerCaseString = 'водичка делает буль-буль';
-
-const saver = function (value) {
-    return function () {
-        return value;
-    };
-};
-
-const retriever = saver("Не подтверждайте действие на странице 127.0.0.1:5500");
-
-alert(retriever());
