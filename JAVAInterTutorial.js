@@ -22,6 +22,7 @@ window.onload = function() {
         }, duration*1000)
     }, 500);
 
+    // Кнопка
     const btn = document.createElement('input');
     btn.id = 'btn';
     btn.type = 'button';
