@@ -17,7 +17,7 @@ body {
 }
 
 #btn {
-    background-color: wheat;
+    background-color: #4CAF50;
     border: none;
     border-radius: 5px;
     outline: none;
@@ -31,6 +31,10 @@ body {
     margin-top: 15px;
 }
 
+i:hover {
+    color: aquamarine;
+    padding: 5px 10px;  
+}
 
 
 
