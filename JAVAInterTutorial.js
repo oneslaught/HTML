@@ -34,20 +34,3 @@ window.onload = function() {
     
     $('i').css('background', '#4CAF50');
 };
-
-const currentHeight = $('i').height(),
-    currentColor = $('i').css('green');
-$.isArray([1, 2, 3]);
-
-$.isFunction(function () { });
-
-$.isNumeric(10);
-
-localStorage.setItem('Пароль от почки', JSON.stringify({
-    username: 'Почка',
-    api_key: '123456789'
-}));
-
-const user = JSON.parse(localStorage.getItem('Пароль от почки'));
-
-const lowerCaseString = 'водичка делает буль-буль';
