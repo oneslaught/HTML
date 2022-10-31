@@ -31,6 +31,4 @@ window.onload = function() {
         btn.style.backgroundColor = `hsl(${Math.random()*255},100%,75%)`
 }
     document.body.appendChild(btn);
-    
-    $('i').css('background', '#4CAF50');
 };
