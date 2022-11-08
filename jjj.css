@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(31, 31, 31);
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+td {
+    border: 2px solid #999;
+    padding: 3em 4em;
+}
+
+table {
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+}
