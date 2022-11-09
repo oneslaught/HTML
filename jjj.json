@@ -1,0 +1,43 @@
+{
+  "posts": [
+    {
+      "id": "13",
+      "title": "qwd",
+      "author": "qdqd"
+    },
+    {
+      "id": "1313",
+      "title": "gadg",
+      "author": "dadd"
+    },
+    {
+      "id": "131",
+      "title": "rggg",
+      "author": "dfgdg"
+    },
+    {
+      "id": "2313",
+      "title": "dfgdfg",
+      "author": "gfdg"
+    },
+    {
+      "id": "31323",
+      "title": "sdfdfs",
+      "author": "fsffs"
+    },
+    {
+      "id": "12313",
+      "title": "ssfs",
+      "author": "sfsdf"
+    },
+    {
+      "id": "5",
+      "title": "h",
+      "author": "h"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
