@@ -8,3 +8,16 @@
 
 // const OurPlanetName = "Earth"
 // let currentUserName = "Babijon"
+
+// let userName = prompt("Как вас зовут?")
+// let noMama = "У вас нет имени? а как насчёт мамы?"
+// if (userName === null) {
+//     alert(noMama)
+// } 
+// else if (userName === "") {
+//     alert(noMama)
+// }
+// else {
+//     alert(`Вас зовут ${userName}!`)
+// }
+
