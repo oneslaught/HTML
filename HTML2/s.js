@@ -52,7 +52,33 @@
 //   (login == '') ? 'Нет логина' :
 //   '';
 
+// let age = prompt("Сколько вам лет?", "")
+// if (age >= 14 && age <= 90 ) {
+//     alert("Нормально, нормально")
+// }
+// else {
+//     alert("Чумба, ты какой-то сусси бака!")
+// }
 
+// let admin = prompt("Кто там?", "")
+// if (admin == "Админ" || admin == "админ") {
+//     let password = prompt("Введите пароль", "")
+//         if (password == "Я главный") {
+//             alert("Здравствуйте!")
+//         }
+//         else if (password == "" || password == null) {
+//             alert("Отменено")
+//         }
+//         else {
+//             alert("Неверный пароль")
+//         }
+// }
+// else if (admin == "" || admin == null) {
+//     alert("Отменено")
+// }
+// else {
+//     alert("Я вас не знаю")
+// }
 
 
 
