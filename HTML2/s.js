@@ -61,7 +61,7 @@
 // }
 
 // let admin = prompt("Кто там?", "")
-// if (admin == "Админ" || admin == "админ") {
+// if (admin === "Админ") {
 //     let password = prompt("Введите пароль", "")
 //         if (password == "Я главный") {
 //             alert("Здравствуйте!")
@@ -80,6 +80,40 @@
 //     alert("Я вас не знаю")
 // }
 
+// for (let i = 2; i < 21; i++) {
+//     if (i % 2 == 0) {
+//         alert(i)
+//     }
+// }
+
+// let a = 0;
+// while (a < 3) {
+//     alert(`number ${a}!`);
+//     a++
+// }
+
+
+// while (true) {
+//     let num = +prompt("Введите число больше 100", "")
+//     if (num > 100) {
+//       alert("Альберт Эйнштейн?"); break
+//     }
+//     else if (!null) {
+//         alert("Куда ты жмал"); break
+//     }
+//     else if (num <= 100) {
+//         continue
+//     }
+// }
+
+// let n = 21;
+// again:
+// for (let i = 2; i <= n; i++) {
+//   for (let j = 2; j < i; j++) {
+//     if (i % j == 0) continue again; 
+//   }
+//   alert( i ); 
+// }
 
 
 
