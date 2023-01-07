@@ -145,5 +145,51 @@
 //         alert('Вы делаете что-то не то в своей жизни')
 // }
 
+// Вариант с ||
+// function checkAge(age) {
+//     return age = age > 18 || confirm("Родители разрешили?")
+// }
+// checkAge(1)
+
+// Вариант с ?
+// function checkAge(age) {
+//     return age = age > 18 ? true : confirm("Родители разрешили?")
+// }
+// checkAge(1)
+
+// function min(a,b) {
+//     if (a > b) {
+//         return b
+//     }
+//     else if (b > a) {
+//         return a
+//     }
+// }
+// min(10,5)
+
+// function checkNum(n) {
+//     if (n % 1 == 0 && n > 0) {
+//         return true
+//     }
+//     else {
+//         return false
+//     }
+// }
+
+// function pow(x,n) {
+//     x = prompt("Введите число")
+//     n = prompt("введите степень")
+
+//     if (x == "" || n == "" || n == null || n == undefined) {
+//         return alert("Настолько лень что-ли?")
+//     }
+
+//     else if (checkNum(n)) {
+//         let result = Math.pow(x, n);
+//         return alert(`Результат: ${result}`)
+//     }
+// }
+// pow()
+
 
 
