@@ -180,7 +180,7 @@
 //     x = prompt("Введите число")
 //     n = prompt("введите степень")
 
-//     if (x == "" || n == "" || n == null || n == undefined) {
+//     if (x == "" || n == "" || n == null || n == undefined || x == null || x == undefinded) {
 //         return alert("Настолько лень что-ли?")
 //     }
 
@@ -191,5 +191,8 @@
 // }
 // pow()
 
-
+// let question = confirm("2 + 2 * 2 = ?") ?
+//     () => alert("неверно") :
+//     () => alert("неверно");
+// question()
 
