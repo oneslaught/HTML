@@ -263,4 +263,20 @@
 
 // multiplyNumeric(menu);
 
+// let calculator = {
+//     read() {
+//         this.firstNum =  +prompt("Введите первое число")
+//         this.secondNum = +prompt("Введите второе")
+//     },
+//     sum() {
+//         return this.firstNum + this.secondNum
+//     },
+//     mul() {
+//         return this.firstNum * this.secondNum
+//     }
+// }
+// calculator.read();
+// alert( `Сумма: ${calculator.sum()}` );
+// alert( `Произведение: ${calculator.mul()}` );
+
     
