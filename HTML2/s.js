@@ -279,21 +279,57 @@
 // alert( `Сумма: ${calculator.sum()}` );
 // alert( `Произведение: ${calculator.mul()}` );
 
-let ladder = {
-    step: 0,
-    up() {
-      this.step++;
-      return this
-    },
-    down() {
-      this.step--;
-      return this
-    },
-    showStep() {
-      alert( this.step );
-      return this
-    }
-  };
+// let ladder = {
+//     step: 0,
+//     up() {
+//       this.step++;
+//       return this
+//     },
+//     down() {
+//       this.step--;
+//       return this
+//     },
+//     showStep() {
+//       alert( this.step );
+//       return this
+//     }
+//   };
   
-  ladder.up().up().down().showStep().down().showStep();
+//   ladder.up().up().down().showStep().down().showStep();
     
+// function Calculator() {
+//     this.read = function() {
+//         this.firstNum =  +prompt("Введите первое число")
+//         this.secondNum = +prompt("Введите второе")
+//     }
+//     this.sum = function() {
+//         return this.firstNum + this.secondNum
+//     }
+//     this.mul = function() {
+//         return this.firstNum * this.secondNum
+//     }
+// }
+
+// let calculator = new Calculator();
+// calculator.read();
+
+// alert( `Сумма: ${calculator.sum()}` );
+// alert( `Произведение: ${calculator.mul()}` );
+
+// function Accumulator(startingValue) {
+//     this.read = function() {
+//         a = +prompt("Сколько нужно добавить?")
+//         b = a
+//     }
+//     this.value = function() {
+//         let sum = startingValue + a + b
+//         return sum
+//     }
+// }
+
+// let accumulator = new Accumulator(1);
+
+// accumulator.read();
+// accumulator.read();
+
+// alert(`Сумма: ${accumulator.value()}`);
