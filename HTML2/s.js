@@ -359,3 +359,19 @@
 // }
 
 // checkNumber();
+
+// function random(min, max) {
+//     return Math.random() * (max - min) + min
+// }
+
+// alert( random(1, 5) );
+// alert( random(1, 5) );
+// alert( random(1, 5) );
+
+// function randomInteger(min, max) {
+//     return Math.floor(Math.random() * (max + 1 - min) + min)
+// }
+
+// alert( randomInteger(1, 5) );
+// alert( randomInteger(1, 5) );
+// alert( randomInteger(1, 5) );
