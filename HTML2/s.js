@@ -333,3 +333,29 @@
 // accumulator.read();
 
 // alert(`Сумма: ${accumulator.value()}`);
+
+// let a = +prompt("Введите первое число")
+// let b = +prompt("Введите второе число")
+
+// let sum = a + b
+// alert(sum)
+
+// alert(Math.round(6.35 * 10))
+
+// function checkNumber() {
+//     outer:for(let num = prompt('Число для проверки');
+//     true;
+//     num = prompt("Введите число")) {
+//         if (num == null || num == "") {
+//         alert("Число: null"); break;
+//         } else if (!(Object.is(parseFloat(num),NaN)) && !isFinite(num)) {
+//         alert('Некорректное число')
+//         } else if (!isFinite(num)) {
+//         alert("Подумайте над своим поведением и введите число"); continue outer;
+//         } else if (isFinite(num)) {
+//         alert(`Вы ввели число ${num}!`); break;
+//         }
+//     }
+// }
+
+// checkNumber();
