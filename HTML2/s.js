@@ -375,3 +375,22 @@
 // alert( randomInteger(1, 5) );
 // alert( randomInteger(1, 5) );
 // alert( randomInteger(1, 5) );
+
+// function ucFirst(str) {
+//     if (!str) {
+//         return str;
+//     } else {
+//         return str = str[0].toUpperCase() + str.slice(1);
+//     }
+// }
+// alert(ucFirst("адам баранов"))
+
+// function checkSpam(str) {
+//     let target = str.toLowerCase()
+//     return target.includes('viagra') || target.includes('xxx')
+//   }
+  
+//   alert( checkSpam('buy ViAgRA now') );
+//   alert( checkSpam('free xxxxx') );
+//   alert( checkSpam("innocent rabbit") );
+
