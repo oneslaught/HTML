@@ -414,3 +414,41 @@
 // alert(styles.shift())
 // styles.unshift("Рэп", "Регги")
 
+// function sumInput() {
+//     let arr = []
+    
+//     while (true) {
+//         let quest = prompt("Введите число 10 раз", 0)
+
+//         if (quest === null || quest === "" || !isFinite(quest)) break
+
+//         arr.push(+quest);
+//     }
+
+//     let sum = 0
+//     for (let i of arr) {
+//         sum += i
+//     }
+//     return sum;
+// }
+// alert(sumInput())
+
+// function getMaxSubSum(arr) {
+//     let maxSum = 0
+//     let incompSum = 0
+
+//     for (let i of arr) {
+//         incompSum += i
+//         maxSum = Math.max(maxSum, incompSum)
+//         if (incompSum < 0) {
+//             incompSum = 0
+//         }
+//     }
+//     return maxSum
+// }
+// alert( getMaxSubSum([-1, 2, 3, -9]) );
+// alert( getMaxSubSum([-1, 2, 3, -9, 11]) );
+// alert( getMaxSubSum([-2, -1, 1, 2]) );
+// alert( getMaxSubSum([100, -9, 2, -3, 5]) );
+// alert( getMaxSubSum([1, 2, 3]) );
+// alert( getMaxSubSum([-1, -2, -3]) );
