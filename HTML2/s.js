@@ -452,3 +452,13 @@
 // alert( getMaxSubSum([100, -9, 2, -3, 5]) );
 // alert( getMaxSubSum([1, 2, 3]) );
 // alert( getMaxSubSum([-1, -2, -3]) );
+
+function camelize(str) {
+    if (str === "") {return str}
+    let arr = str.split("-")
+    let res = arr.map( (element, index) => element === arr[0] ? 
+	element : element[0].toUpperCase() + element.slice(1) )
+	return result.join('')
+    
+}
+alert(camelize("background-color"))
