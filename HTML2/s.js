@@ -453,12 +453,36 @@
 // alert( getMaxSubSum([1, 2, 3]) );
 // alert( getMaxSubSum([-1, -2, -3]) );
 
-function camelize(str) {
-    if (str === "") {return str}
-    let arr = str.split("-")
-    let res = arr.map( (element, index) => element === arr[0] ? 
-	element : element[0].toUpperCase() + element.slice(1) )
-	return result.join('')
+// function camelize(str) {
+//     if (str === "") {return str}
+//     let arr = str.split("-")
+//     let res = arr.map( (element, index) => element === arr[0] ? 
+// 	element : element[0].toUpperCase() + element.slice(1) )
+// 	return result.join('')
     
-}
-alert(camelize("background-color"))
+// }
+// alert(camelize("background-color"))
+
+// function filterRange(arr, a, b) {
+//     return arr.filter(item => a <= item && b >= item)
+// }
+
+// let arr = [5, 3, 8, 1];
+
+// let filtered = filterRange(arr, 1, 4);
+
+// alert( filtered );
+
+// alert( arr )
+
+// function filterRangeInPlace(arr, a, b) {
+//     for (let i = 0; i < arr.length; i++)     {
+//         if (arr[i] < a || arr[i] > b) {
+//             arr.splice(i, 1);
+//             i--;
+//         }
+//     }
+// }
+
+// let arr = [5, 3, 8, 1];
+// alert( arr )
