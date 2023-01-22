@@ -486,3 +486,19 @@
 
 // let arr = [5, 3, 8, 1];
 // alert( arr )
+
+// let arr = [5, 2, 1, -10, 8]
+// let sortArr = arr.sort()
+
+// alert(sortArr.reverse())
+
+// let arr = ["HTML", "JavaScript", "CSS"];
+
+// function copySorted(arr) {
+//     return arr.slice().sort()
+// }
+
+// let sorted = copySorted(arr)
+
+// alert(sorted)
+// alert(arr)
