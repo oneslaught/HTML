@@ -502,3 +502,93 @@
 
 // alert(sorted)
 // alert(arr)
+
+// function Calculator() {
+
+//     this.methods = {
+//       "-": (a, b) => a - b,
+//       "+": (a, b) => a + b
+//     };
+  
+//     this.calculate = function(str) {
+  
+//       let split = str.split(' '),
+//         a = +split[0],
+//         op = split[1],
+//         b = +split[2]
+  
+//       if (!this.methods[op] || isNaN(a) || isNaN(b)) {
+//         return NaN;
+//       }
+  
+//       return this.methods[op](a, b);
+//     }
+  
+//     this.addMethod = function(name, func) {
+//       this.methods[name] = func;
+//     };
+//   }
+
+// скопипастил, тяжело-тяжело
+// let calc = new Calculator;
+
+// alert( calc.calculate("3 + 7") );
+
+// let powerCalc = new Calculator;
+// powerCalc.addMethod("*", (a, b) => a * b);
+// powerCalc.addMethod("/", (a, b) => a / b);
+// powerCalc.addMethod("**", (a, b) => a ** b);
+
+// let result = powerCalc.calculate("2 ** 3");
+// alert( result );
+
+// let vasya = { name: "Вася", age: 25 };
+// let petya = { name: "Петя", age: 30 };
+// let masha = { name: "Маша", age: 28 };
+
+// let users = [ vasya, petya, masha ];
+/* let names = users.find(item => alert(item.name))
+alert(names.slice()) на 3 вызова*/
+
+// let names = users.map(item => item.name)
+// alert(names)
+
+// let vasya = { name: "Вася", surname: "Пупкин", id: 1 };
+// let petya = { name: "Петя", surname: "Иванов", id: 2 };
+// let masha = { name: "Маша", surname: "Петрова", id: 3 };
+
+// let users = [ vasya, petya, masha ];
+
+// let usersMapped = users.map(user => ({
+//   fullName: `${user.name} ${user.surname}`,
+//   id: user.id
+// }))
+
+// alert( usersMapped[0].id );
+// alert( usersMapped[0].fullName );
+
+// function sortByAge(arr) {
+//     arr.sort((a, b) => a.age - b.age);
+// }
+
+// let vasya = { name: "Вася", age: 25 };
+// let petya = { name: "Петя", age: 30 };
+// let masha = { name: "Маша", age: 28 };
+
+// let arr = [ vasya, petya, masha ];
+
+// sortByAge(arr);
+
+// alert(arr[0].name); 
+// alert(arr[1].name);
+// alert(arr[2].name); 
+
+// let arr = [1, 2, 3];
+
+// function shuffle(array) {
+// array.sort(() => Math.random() - 0.5);
+// }
+
+// shuffle(arr)
+// alert(arr)
+
