@@ -592,3 +592,46 @@ alert(names.slice()) на 3 вызова*/
 // shuffle(arr)
 // alert(arr)
 
+// function getAverageAge(users) {
+//     return users.reduce((prop, user) => prop + user.age, 0) / users.length
+// }
+
+// let vasya = { name: "Вася", age: 25 };
+// let petya = { name: "Петя", age: 30 };
+// let masha = { name: "Маша", age: 29 };
+
+// let arr = [ vasya, petya, masha ];
+
+// alert( getAverageAge(arr) ); // 28
+
+// function unique(arr) {
+//     let result = []
+//     for (let str of arr) {
+//       if (!result.includes(str)) {
+//         result.push(str)
+//       }
+//     }
+//     return result
+// }
+
+// let strings = ["кришна", "кришна", "харе", "харе",
+// "харе", "харе", "кришна", "кришна", ":-O"
+// ];
+
+// alert( unique(strings) );
+  
+// function groupById(arr) {
+//     return arr.reduce((obj, val) => {
+//       obj[val.id] = val
+//       return obj
+//     }, {})
+// }
+
+// let users = [
+//     {id: 'john', name: "John Smith", age: 20},
+//     {id: 'ann', name: "Ann Smith", age: 24},
+//     {id: 'pete', name: "Pete Peterson", age: 31},
+// ];
+  
+// let usersById = groupById(users);
+// console.log(usersById)
