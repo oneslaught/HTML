@@ -661,3 +661,25 @@ alert(names.slice()) на 3 вызова*/
   
 //   alert( aclean(arr) );
 
+// let messages = [
+//     {text: "Hello", from: "John"},
+//     {text: "How goes?", from: "John"},
+//     {text: "See you soon", from: "Alice"}
+// ];
+
+// let checkMessages = new WeakSet()
+
+// checkMessages.add(messages[0])
+// checkMessages.add(messages[1])
+// checkMessages.add(messages[2])
+
+// messages.pop()
+// alert(messages.length)
+
+// let messages = [
+//     { text: "Hello", from: "John" },
+//     { text: "How goes?", from: "John" },
+//     { text: "See you soon", from: "Alice" }
+// ];
+
+
