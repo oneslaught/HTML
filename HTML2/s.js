@@ -739,3 +739,35 @@ alert(names.slice()) на 3 вызова*/
 //     return maxName
 // }
 
+// let date = new Date(2012, 1, 20, 3, 12)
+// alert(date)
+
+// let date = new Date(2012, 0, 3);
+
+// function getWeekDay () {
+//     let options = { weekday: 'short'};   
+
+//     alert(new Intl.DateTimeFormat('ru-RU', options).format(date))
+// }
+// getWeekDay()
+
+// let date = new Date(2012, 0, 3);
+// alert(getLocalDay(date));
+
+// function getLocalDay(date) {
+//     let days = [7,1,2,3,4,5,6]
+//     return(days[date.getDay()])
+// }
+
+// function getDateAgo(date, days) {
+//     let dateCopy = new Date(date)
+
+//     dateCopy.setDate(dateCopy.getDate() - days)
+//     return dateCopy.getDate()
+// }
+
+// let date = new Date(2015, 0, 2);
+
+// alert( getDateAgo(date, 1) );
+// alert( getDateAgo(date, 2) );
+// alert( getDateAgo(date, 365) );
