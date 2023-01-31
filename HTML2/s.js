@@ -771,3 +771,51 @@ alert(names.slice()) на 3 вызова*/
 // alert( getDateAgo(date, 1) );
 // alert( getDateAgo(date, 2) );
 // alert( getDateAgo(date, 365) );
+
+// let lastday = function(y,m) {
+//     return  new Date(y, m +1, 0).getDate()
+// }
+
+// console.log(lastday(2012, 1))
+
+// function getSecondsToday() {
+//     let date = new Date()
+//     let seconds = date.getHours() * 3600 + date.getMinutes() * 60 + date.getSeconds()
+//     return seconds
+// }
+
+// console.log(`С начала текущего дня прошло ${getSecondsToday()} секунд!`)
+
+// function getSecondsToTomorrow() {
+//     let date = new Date()
+//     let allSeconds = 24 * 3600
+//     let seconds = allSeconds - (date.getHours() * 3600 + date.getMinutes() * 60 + date.getSeconds())
+//     return seconds
+// }
+
+// console.log(`До завтрашней даты осталось ${getSecondsToTomorrow()} секунд!`)
+
+// function formatDate(date) {
+//     let sec = new Date() - date;
+//     let below10 = (n) => ((n < 10) ? '0' + n : n)
+//     let year = below10(date.getFullYear())
+//     let month = below10(date.getMonth()+1)
+//     let day = below10(date.getDate())
+//     let hour = below10(date.getHours())
+//     let min = below10(date.getMinutes())
+
+//     if (sec <= 1000) {
+//         return "прямо сейчас"
+//     } else if (sec < 1000 * 60) {
+//         return `${sec / 1000} сек. назад`
+//     } else if (sec < 1000 * 60 * 60) {
+//         return `${sec / (1000 * 60)} мин. назад`
+//     } else {
+//         return `${day}.${month}.${year}, ${hour}:${min}`
+//     }
+// }
+
+// console.log( formatDate(new Date(new Date - 1)) ); 
+// console.log( formatDate(new Date(new Date - 30 * 1000)) ); 
+// console.log( formatDate(new Date(new Date - 5 * 60 * 1000)) );
+// console.log( formatDate(new Date(new Date - 86400 * 1000)) );
