@@ -844,3 +844,32 @@ alert(names.slice()) на 3 вызова*/
 // alert( JSON.stringify(meetup, function replacer(key, value) {
 //     return (key == 'occupiedBy' || key == 'self') ? undefined : value;
 // }))
+
+// function sumTo(n) {
+//     let sum = 0
+
+//     for (i = 0; i <= n; i++) {
+//         sum += i
+//     }
+//     return sum
+// }
+
+// console.log(sumTo(6))
+
+// sum = 0
+// i = 0
+// function sumTo(n) {
+//     i++
+//     sum += i
+//     if (i >= n) return
+//     sumTo(6)
+// }
+
+// sumTo(6)
+// console.log(sum)
+
+// function sumTo(n) {
+//     return n * (n + 1) / 2
+// }
+
+// console.log(sumTo(6))
