@@ -880,3 +880,23 @@ alert(names.slice()) на 3 вызова*/
 // }
 
 // console.log(factorial(5))
+
+/* function fib(n) {
+    if (n <= 1) return n
+    return fib(n - 1) + fib(n - 2)
+}
+ // не то что надо
+console.log(fib(3)) */
+
+/* function fib(n) {
+    let a = 1;
+    let b = 1;
+    for (let i = 3; i <= n; i++) {
+      let c = a + b;
+      a = b;
+      b = c;
+    }
+    return b;
+}
+ //то что надо
+console.log(fib(89)) */
