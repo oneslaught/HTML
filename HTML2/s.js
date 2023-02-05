@@ -900,3 +900,71 @@ console.log(fib(3)) */
 }
  //то что надо
 console.log(fib(89)) */
+
+// let list = { value: 1 };
+// list.next = { value: 2 };
+// list.next.next = { value: 3 };
+// list.next.next.next = { value: 4 };
+
+// function printList(list) {
+//   listCopy = list
+
+//   while(listCopy) {
+//     console.log(listCopy.value)
+//     listCopy = listCopy.next
+//   }
+// }
+
+// printList(list)
+
+// let list = { value: 1 };
+// list.next = { value: 2 };
+// list.next.next = { value: 3 };
+// list.next.next.next = { value: 4 };
+
+// function printList(list) {
+//   console.log(list.value)
+
+//   if (list.next) {
+//     printList(list.next)
+//   }
+// }
+
+// printList(list)
+
+// let list = { value: 1 };
+// list.next = { value: 2 };
+// list.next.next = { value: 3 };
+// list.next.next.next = { value: 4 };
+
+// function printListReverse(list) {
+//   let values = []
+//   let value
+//   let listCopy = list
+  
+//   while (listCopy) {
+//     values.push(listCopy.value)
+//     listCopy = listCopy.next
+//   }
+  
+//   while (value = values.pop()) {
+//     console.log(value)
+//   }
+// }
+
+// printListReverse(list)
+
+// let list = { value: 1 };
+// list.next = { value: 2 };
+// list.next.next = { value: 3 };
+// list.next.next.next = { value: 4 };
+
+// function printReverseList(list) {
+//   if (list.next) {
+//     printReverseList(list.next)
+//   }
+
+//   console.log(list.value)
+// }
+
+// printReverseList(list)
