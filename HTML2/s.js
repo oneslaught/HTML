@@ -968,3 +968,29 @@ console.log(fib(89)) */
 // }
 
 // printReverseList(list)
+
+// function sum(a) {
+//   return b = b => a + b
+// }
+
+// alert( sum(1)(2) )
+// alert( sum(5)(-1) )
+
+// function inBetween(a, b) {
+// 	return function(item) {
+// 		return (item >= a) && (item <= b)
+// 	}
+// }
+
+// function inArray(array) {
+// 	return function(item) {
+// 		return array.includes(item)
+// 	}
+// }
+
+// let arr = [1, 2, 3, 4, 5, 6, 7]
+
+// alert( arr.filter(inBetween(3, 6)) );
+
+// alert( arr.filter(inArray([1, 2, 10])) ); 
+
