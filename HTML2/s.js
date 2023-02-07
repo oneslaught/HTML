@@ -994,3 +994,37 @@ console.log(fib(89)) */
 
 // alert( arr.filter(inArray([1, 2, 10])) ); 
 
+// let users = [
+//   { name: "John", age: 20, surname: "Johnson" },
+//   { name: "Pete", age: 18, surname: "Peterson" },
+//   { name: "Ann", age: 19, surname: "Hathaway" }
+// ];
+
+// function byField(field) {
+//   return (a, b) => a[field] > b[field] ? 1 : -1;
+// }
+
+// users.sort(byField('name'));
+// users.forEach(user => alert(user.name));
+
+// users.sort(byField('age'));
+// users.forEach(user => alert(user.name));
+
+// function makeArmy() {
+
+//   let shooters = [];
+
+//   for(let i = 0; i < 10; i++) {
+//     let shooter = function() {
+//       alert( i );
+//     };
+//     shooters.push(shooter);
+//   }
+
+//   return shooters;
+// }
+
+// let army = makeArmy();
+
+// army[0]();
+// army[5]();
