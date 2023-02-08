@@ -1028,3 +1028,31 @@ console.log(fib(89)) */
 
 // army[0]();
 // army[5]();
+
+// function makeCounter() {
+//   function counter() {
+//     return count++;
+//   };
+
+//   counter.set = value => count = value
+//   counter.decrease = () => count--
+
+//   let count = 0
+
+//   return counter;
+// }
+
+// let counter = makeCounter();
+// alert( counter.set(11) )
+
+// function sum(a) {
+//   function next(b) {
+//     a += b
+//     return next
+//   }
+
+//   next.toString = () => a
+//   return next
+// }
+
+// alert(sum(10)(9)(11)(20))
