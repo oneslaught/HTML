@@ -1056,3 +1056,28 @@ console.log(fib(89)) */
 // }
 
 // alert(sum(10)(9)(11)(20))
+
+// function printNumbers(from, to) {
+//   let interval = setInterval(function() {
+//     if (from <= to) {
+//       console.log(from++)
+//     } else {
+//       clearInterval(interval)
+//     }
+//   }, 1000)
+// }
+
+// printNumbers(0, 10)
+
+// function printNumbers(from, to) {
+//   let interval = setTimeout(function next() {
+//     if (from <= to) {
+//       console.log(from++)
+//       setTimeout(next, 1000)
+//     } else {
+//       clearTimeout(interval)
+//     }
+//   }, 1000)
+// }
+
+// printNumbers(0, 10)
