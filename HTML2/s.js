@@ -1263,3 +1263,27 @@ console.log(fib(89)) */
 
 // alert( speedy.stomach );
 // alert( lazy.stomach );
+
+// Function.prototype.defer = function(ms) {
+//   setTimeout(this, ms)
+// }
+
+// function f() {
+//   alert("Hello!");
+// }
+
+// f.defer(1000);
+
+// Function.prototype.defer = function(ms) {
+//   let t = this
+
+//   return function (...arg) {
+//     setTimeout(t, ms, ...arg)
+//   }
+// }
+
+// function f(a, b) {
+//   alert( a + b );
+// }
+
+// f.defer(1000)(1, 2);
