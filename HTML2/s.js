@@ -1287,3 +1287,19 @@ console.log(fib(89)) */
 // }
 
 // f.defer(1000)(1, 2);
+
+// let dictionary = Object.create(null, {
+//   toString: {
+//     value() { return Object.keys(this).join() }
+//   }
+// })
+
+// dictionary.apple = "Apple";
+// dictionary.__proto__ = "test";
+
+// for(let key in dictionary) {
+//   alert(key);
+// }
+
+// alert(dictionary);
+
