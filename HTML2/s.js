@@ -1425,3 +1425,19 @@ console.log(fib(89)) */
 // let rabbit = new Rabbit("Кроль");
 
 // alert( rabbit.hasOwnProperty('name') );
+
+// class FormatError extends SyntaxError {
+//   constructor(message) {
+//     super(message);
+//     this.name = "FormatError";
+//   }
+// }
+
+// let err = new FormatError("ошибка форматирования");
+
+// alert( err.message );
+// alert( err.name );
+// alert( err.stack );
+
+// alert( err instanceof FormatError );
+// alert( err instanceof SyntaxError );
