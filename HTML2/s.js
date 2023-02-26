@@ -1441,3 +1441,10 @@ console.log(fib(89)) */
 
 // alert( err instanceof FormatError );
 // alert( err instanceof SyntaxError );
+
+// function delay(ms) {
+//   promise = new Promise(resolve => setTimeout(resolve, ms))
+//   return promise
+// }
+
+// delay(3000).then(() => alert('выполнилось через 3 секунды'));
