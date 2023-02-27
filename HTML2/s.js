@@ -1448,3 +1448,14 @@ console.log(fib(89)) */
 // }
 
 // delay(3000).then(() => alert('выполнилось через 3 секунды'));
+
+// document.body.firstElementChild
+// document.body.lastElementChild
+// document.body.lastElementChild.lastElementChild
+
+// table.rows[0].cells[0].style.background = 'red'
+// table.rows[1].cells[1].style.background = 'red'
+// table.rows[2].cells[2].style.background = 'red'
+// table.rows[3].cells[3].style.background = 'red'
+// table.rows[4].cells[4].style.background = 'red'
+
