@@ -1459,3 +1459,12 @@ console.log(fib(89)) */
 // table.rows[3].cells[3].style.background = 'red'
 // table.rows[4].cells[4].style.background = 'red'
 
+// let table = document.getElementById("age-table")
+// table.getElementsByTagName("label")
+// table.querySelector("td")
+// let form = document.getElementsByName("search")[0]
+// form.querySelector("input")
+// let input = form.querySelectorAll("input")
+// input[input.length-1]
+
+
