@@ -1467,4 +1467,9 @@ console.log(fib(89)) */
 // let input = form.querySelectorAll("input")
 // input[input.length-1]
 
+// for (let li of document.querySelectorAll("li")) {
+//   let name = li.firstChild.data
+//   let amount = li.getElementsByTagName("li").length
 
+//   alert(`${name}: ${amount}`)
+// }
