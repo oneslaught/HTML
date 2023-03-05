@@ -9,35 +9,36 @@
     <title>Купить почку</title>
 </head>
 <body>
-    <div>Пользователи:</div>
-    <ul>
-        <li>Джон</li>
-        <li>Пит</li>
-    </ul>
+    <!-- <ol id="elem">
+        <li>Привет</li>
+        <li>Мир</li>
+    </ol>
+      
+    <script>
+        function clear(elem) {
+            /* let elemRemove = elem.remove()
+            return elemRemove */
+            elem.innerHTML = ""
+        }
+        clear(elem);
+    </script> -->
 
-    <div data-widget-name="menu">Choose the genre</div>
-
-    <a name="list">the list</a>
-    <ul>
-        <li><a href="http://google.com">http://google.com</a></li>
-        <li><a href="/tutorial">/tutorial.html</a></li>
-        <li><a href="local/path">local/path</a></li>
-        <li><a href="ftp://ftp.com/my.zip">ftp://ftp.com/my.zip</a></li>
-        <li><a href="http://nodejs.org">http://nodejs.org</a></li>
-        <li><a href="http://internal.com/test">http://internal.com/test</a></li>
-    </ul>
+    <!-- <h1>Список</h1>
 
     <script>
-        let elem = document.querySelector("[data-widget-name]")
-        alert(elem.dataset.widgetName)
+        let ul = document.createElement("ul")
+        document.body.append(ul)
 
-        let link = document.querySelector('a');
-        link.style.color = 'orange';
+        while(true) {
+            let quest = prompt("Введите что-то")
 
-        let selector = 'a[href*="://"]:not([href^="http://internal.com"])';
-        let links = document.querySelectorAll(selector);
-        
-        links.forEach(link => link.style.color = 'orange');  
-    </script>
+            let li = document.createElement('li')
+            li.textContent = quest
+            ul.append(li)
+
+            if(!quest) break
+        }
+
+    </script> -->
 </body>
 </html>
