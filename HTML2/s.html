@@ -112,5 +112,88 @@
         li.firstChild.data = `${li.firstChild.data} [${count}]`
       }
     </script> -->
+
+    <!-- <div id="calendar"></div>
+
+  <script>
+    function createCalendar(elem, year, month) {
+
+      let mon = month - 1;
+      let d = new Date(year, mon);
+
+      let table = '<table><tr><th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th>сб</th><th>вс</th></tr><tr>';
+
+      for (let i = 0; i < getDay(d); i++) {
+        table += '<td></td>';
+      }
+
+      while (d.getMonth() == mon) {
+        table += '<td>' + d.getDate() + '</td>';
+
+        if (getDay(d) % 7 == 6) {
+          table += '</tr><tr>';
+        }
+
+        d.setDate(d.getDate() + 1);
+      }
+
+      if (getDay(d) != 0) {
+        for (let i = getDay(d); i < 7; i++) {
+          table += '<td></td>';
+        }
+      }
+
+      table += '</tr></table>';
+
+      elem.innerHTML = table;
+    }
+
+    function getDay(date) {
+      let day = date.getDay();
+      if (day == 0) day = 7;
+      return day - 1;
+    }
+
+    createCalendar(calendar, 2012, 9);
+  </script> -->
+
+  <!-- <div id="clock">
+    <span class="hour">hh</span>:<span class="min">mm</span>:<span class="sec">ss</span>
+  </div>
+
+  <input type="button" onclick="clockStart()" value="Start">
+  <input type="button" onclick="clockStop()" value="Stop">
+
+  <script>
+  let timerId
+
+    function clock() {
+      let clock = document.getElementById('clock')
+      let d = new Date()
+
+      let h = d.getHours()
+      let m = d.getMinutes()
+      let s = d.getSeconds()
+
+      if (h < 10) h = '0' + h
+      clock.children[0].innerHTML = h
+
+      if (m < 10) m = '0' + m
+      clock.children[1].innerHTML = m
+
+      if (s < 10) s = '0' + s
+      clock.children[2].innerHTML = s
+    }
+
+    function clockStart() {
+      if (!timerId) timerId = setInterval(clock, 1000)
+      clock()
+    }
+
+    function clockStop() {
+      clearInterval(timerId)
+      timerId = null
+    } -->
+  </script>
   </body>
 </html>
