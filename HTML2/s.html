@@ -165,7 +165,7 @@
   <input type="button" onclick="clockStop()" value="Stop">
 
   <script>
-  let timerId
+    let timerId
 
     function clock() {
       let clock = document.getElementById('clock')
@@ -194,6 +194,45 @@
       clearInterval(timerId)
       timerId = null
     } -->
-  </script>
+  <!-- </script> -->
+
+    <!-- <ul id="ul">
+      <li id="one">1</li>
+      <li id="two">4</li>
+    </ul>
+
+    <script>
+      one.insertAdjacentHTML("afterend", "<li>2</li><li>3</li>")
+    </script> -->
+
+    <!-- <table>
+      <thead>
+        <tr>
+          <th>Name</th><th>Surname</th><th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td><td>Smith</td><td>10</td>
+        </tr>
+        <tr>
+          <td>Pete</td><td>Brown</td><td>15</td>
+        </tr>
+        <tr>
+          <td>Ann</td><td>Lee</td><td>5</td>
+        </tr>
+        <tr>
+          <td>...</td><td>...</td><td>...</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+      let sortedRows = Array.from(table.rows)
+      .slice(1)
+      .sort((rowA, rowB) => rowA.cells[0].innerHTML > rowB.cells[0].innerHTML ? 1 : -1);
+
+      table.tBodies[0].append(...sortedRows);
+    </script> -->
   </body>
 </html>
