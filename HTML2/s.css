@@ -34,8 +34,21 @@ h1 {
   color: yellow;
 } */
 
-#example {
+/* #example {
   width: 300px;
   height: 200px;
   overflow: scroll;
 }
+
+#field {
+  width: 200px;
+  border: 10px groove black;
+  background-color: #00FF00;
+  position: relative;
+}
+
+#ball {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+} */
