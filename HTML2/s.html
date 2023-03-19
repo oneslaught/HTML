@@ -506,5 +506,104 @@
       showNote(blockquote, "bottom-in", "note bottom-in");
     </script> -->
 
+    <!--<input type="button" id="hider" value="Нажмите, чтобы спрятать текст" />
+
+    <div id="text">Текст</div>
+  
+    <script>
+      hider.onclick = function() {
+        const text = document.getElementById("text")
+        text.style.display = "none"
+      }
+    </script>
+
+    <input type="button" id="hiderButton" value="Нажми, чтобы спрятать кнопку" />    
+
+    <script>
+      hiderButton.onclick = function() {
+        const button = document.getElementById("hiderButton")
+        button.style.display = "none"
+      }
+    </script> -->
+
+  <!-- Нажмите на поле для перемещения мяча.
+  <br> Мяч не должен выходить за границы поля.
+
+
+  <div id="field">
+    <img src="https://ru.js.cx/clipart/ball.svg" id="ball"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+  </div>
+
+  <script>
+    field.onclick = function(event) {
+
+      let fieldCoords = this.getBoundingClientRect();
+
+      let ballCoords = {
+        top: event.clientY - fieldCoords.top - field.clientTop - ball.clientHeight / 2,
+        left: event.clientX - fieldCoords.left - field.clientLeft - ball.clientWidth / 2
+      };
+
+      if (ballCoords.top < 0) ballCoords.top = 0;
+
+      if (ballCoords.left < 0) ballCoords.left = 0;
+
+      if (ballCoords.left + ball.clientWidth > field.clientWidth) {
+        ballCoords.left = field.clientWidth - ball.clientWidth;
+      }
+
+      if (ballCoords.top + ball.clientHeight > field.clientHeight) {
+        ballCoords.top = field.clientHeight - ball.clientHeight;
+      }
+
+      ball.style.left = ballCoords.left + 'px';
+      ball.style.top = ballCoords.top + 'px';
+    }
+  </script> -->
+
+  <!-- <div id="menu">▶ Сладости (нажми меня)!</div>
+      <ul id="list">
+        <li>Пирожное</li>
+        <li>Пончик</li>
+        <li>Мёд</li>
+      </ul>
+
+  <script>
+    list.style.display = "none"
+
+    function closeMenu() {
+      menu.innerHTML = "▶ Сладости (нажми меня)!"
+    }
+
+    function openMenu() {
+      menu.innerHTML = "▼ Сладости (нажми меня)!"
+      const list = document.getElementById("list")
+      list.style.display = "list-item"
+    }
+
+    menu.addEventListener("click", closeMenu)
+    menu.addEventListener("click", openMenu)
+  </script> -моё свободное время -->
+
+  <!-- <div id="sweeties" class="menu">
+    <span class="title">Сладости (нажми меня)!</span>
+    <ul>
+      <li>Пирожное</li>
+      <li>Пончик</li>
+      <li>Мёд</li>
+    </ul>
+
+  </div>
+
+  <script>
+    let menuElem = document.getElementById('sweeties');
+    let titleElem = menuElem.querySelector('.title');
+
+    titleElem.onclick = function() {
+      menuElem.classList.toggle('open');
+    };
+  </script> -->
+
   </body>
 </html>
