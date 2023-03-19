@@ -111,7 +111,7 @@ blockquote:before {
   vertical-align: -.4em;
 } */
 
-.note {
+/* .note {
   position: absolute;
   z-index: 1000;
   padding: 5px;
@@ -138,4 +138,46 @@ blockquote:before {
   line-height: .1em;
   margin-right: .25em;
   vertical-align: -.4em;
+} */
+
+/* #field {
+  width: 200px;
+  height: 150px;
+  border: 10px solid black;
+  background-color: #00FF00;
+  overflow: hidden;
+  position: relative;
 }
+
+#ball {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 1s all;
+} */
+
+/* .menu ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 20px;
+  display: none;
+}
+
+.menu .title {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.menu .title::before {
+  content: '▶ ';
+  font-size: 80%;
+  color: green;
+}
+
+.menu.open .title::before {
+  content: '▼ ';
+}
+
+.menu.open ul {
+  display: block;
+} */
