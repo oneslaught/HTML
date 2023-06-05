@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="s.js"></script>
+    <link rel="stylesheet" href="CSS/s.css" />
+    <title>Купить почку</title>
+  </head>
+  <body>
+    <!-- <div id="container"></div>
+
+    <script>
+      let data = {
+        "Рыбы": {
+          "форель": {},
+          "лосось": {}
+        },
+  
+        "Деревья": {
+          "Огромные": {
+            "секвойя": {},
+            "дуб": {}
+          },
+          "Цветковые": {
+            "яблоня": {},
+            "магнолия": {}
+          }
+        }
+      };
+  
+      function createTree(container, obj) {
+        container.append(createTreeDom(obj));
+      }
+  
+      function createTreeDom(obj) {
+        if (!Object.keys(obj).length) return;
+  
+        let ul = document.createElement('ul');
+  
+        for (let key in obj) {
+          let li = document.createElement('li');
+          li.innerHTML = key;
+  
+          let childrenUl = createTreeDom(obj[key]);
+          if (childrenUl) {
+            li.append(childrenUl);
+          }
+  
+          ul.append(li);
+        }
+  
+        return ul;
+      }
+  
+      let container = document.getElementById('container');
+      createTree(container, data);
+    </script> -->
+
+    <!-- <ul>
+      <li>
+        Животные
+        <ul>
+          <li>
+            Млекопитающие
+            <ul>
+              <li>Коровы</li>
+              <li>Ослы</li>
+              <li>Собаки</li>
+              <li>Тигры</li>
+            </ul>
+          </li>
+          <li>
+            Другие
+            <ul>
+              <li>Змеи</li>
+              <li>Птицы</li>
+              <li>Ящерицы</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        Рыбы
+        <ul>
+          <li>
+            Аквариумные
+            <ul>
+              <li>Гуппи</li>
+              <li>Скалярии</li>
+            </ul>
+          </li>
+          <li>
+            Морские
+            <ul>
+              <li>Морская форель</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <script>
+      let liElem = document.getElementsByTagName("li")
+
+      for (let li of liElem) {
+        let count = li.getElementsByTagName("li").length;
+        if (!count) {
+          continue;
+        }
+        li.firstChild.data = `${li.firstChild.data} [${count}]`
+      }
+    </script> -->
+
+    <!-- <div id="calendar"></div>
+
+  <script>
+    function createCalendar(elem, year, month) {
+
+      let mon = month - 1;
+      let d = new Date(year, mon);
+
+      let table = '<table><tr><th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th>сб</th><th>вс</th></tr><tr>';
+
+      for (let i = 0; i < getDay(d); i++) {
+        table += '<td></td>';
+      }
+
+      while (d.getMonth() == mon) {
+        table += '<td>' + d.getDate() + '</td>';
+
+        if (getDay(d) % 7 == 6) {
+          table += '</tr><tr>';
+        }
+
+        d.setDate(d.getDate() + 1);
+      }
+
+      if (getDay(d) != 0) {
+        for (let i = getDay(d); i < 7; i++) {
+          table += '<td></td>';
+        }
+      }
+
+      table += '</tr></table>';
+
+      elem.innerHTML = table;
+    }
+
+    function getDay(date) {
+      let day = date.getDay();
+      if (day == 0) day = 7;
+      return day - 1;
+    }
+
+    createCalendar(calendar, 2012, 9);
+  </script> -->
+
+  <!-- <div id="clock">
+    <span class="hour">hh</span>:<span class="min">mm</span>:<span class="sec">ss</span>
+  </div>
+
+  <input type="button" onclick="clockStart()" value="Start">
+  <input type="button" onclick="clockStop()" value="Stop">
+
+  <script>
+    let timerId
+
+    function clock() {
+      let clock = document.getElementById('clock')
+      let d = new Date()
+
+      let h = d.getHours()
+      let m = d.getMinutes()
+      let s = d.getSeconds()
+
+      if (h < 10) h = '0' + h
+      clock.children[0].innerHTML = h
+
+      if (m < 10) m = '0' + m
+      clock.children[1].innerHTML = m
+
+      if (s < 10) s = '0' + s
+      clock.children[2].innerHTML = s
+    }
+
+    function clockStart() {
+      if (!timerId) timerId = setInterval(clock, 1000)
+      clock()
+    }
+
+    function clockStop() {
+      clearInterval(timerId)
+      timerId = null
+    } -->
+  <!-- </script> -->
+
+    <!-- <ul id="ul">
+      <li id="one">1</li>
+      <li id="two">4</li>
+    </ul>
+
+    <script>
+      one.insertAdjacentHTML("afterend", "<li>2</li><li>3</li>")
+    </script> -->
+
+    <!-- <table>
+      <thead>
+        <tr>
+          <th>Name</th><th>Surname</th><th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td><td>Smith</td><td>10</td>
+        </tr>
+        <tr>
+          <td>Pete</td><td>Brown</td><td>15</td>
+        </tr>
+        <tr>
+          <td>Ann</td><td>Lee</td><td>5</td>
+        </tr>
+        <tr>
+          <td>...</td><td>...</td><td>...</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+      let sortedRows = Array.from(table.rows)
+      .slice(1)
+      .sort((rowA, rowB) => rowA.cells[0].innerHTML > rowB.cells[0].innerHTML ? 1 : -1);
+
+      table.tBodies[0].append(...sortedRows);
+    </script> -->
+
+    <!-- <script>
+      function showNotification({top = 0, right = 0, html, className}) {
+      
+      let notification = document.createElement("div")
+      notification.className = "notification"
+      notification.classList.add(className)
+    
+      notification.style.top = top + "px"
+      notification.style.right = right + "px"
+      notification.innerHTML = html
+      document.body.append(notification)
+
+      setTimeout(() => notification.remove(), 1500)
+      }
+
+      let i = 1
+      setInterval(() => {
+        showNotification({
+          top: 10,
+          right: 10,
+          html: "Hello " + i++,
+          className: "welcome"
+        })
+      }, 2000)
+
+    </script> -->
+
+    <!-- <script>
+      let scrollBottom = elem.scrollHeight - elem.scrollTop - elem.clientHeight
+    </script>
+
+    <div id="example">
+    <h3>Introduction</h3>
+    <p>This Ecma Standard is based on several originating technologies, the most well known being JavaScript (Netscape) and JScript
+      (Microsoft). The language was invented by Brendan Eich at Netscape and first appeared in that company's Navigator 2.0 browser.
+      It has appeared in all subsequent browsers from Netscape and in all browsers from Microsoft starting with Internet 
+      Explorer 3.0. The development of this Standard started in November 1996. The first edition of this Ecma Standard was adopted 
+      by the Ecma General Assembly of June 1997.
+    </p>
+
+    <p>That Ecma Standard was submitted to ISO/IEC JTC 1 for adoption under the fast-track procedure, and approved as international
+      standard ISO/IEC 16262, in April 1998. The Ecma General Assembly of June 1998 approved the second edition of ECMA-262 to keep
+      it fully aligned with ISO/IEC 16262. Changes between the first and the second edition are editorial in nature.
+    </p>
+
+    <p>The third edition of the Standard introduced powerful regular expressions, better string handling, new control statements, 
+    try/catch exception handling, tighter definition of errors, formatting for numeric output and minor changes in anticipation
+    of forthcoming internationalisation facilities and future language growth. The third edition of the ECMAScript standard was 
+    adopted by the Ecma General Assembly of December 1999 and published as ISO/IEC 16262:2002 in June 2002.
+    </p>
+  </div>
+
+  <script>
+    let scrollWidth = document.getElementById("example").offsetWidth - document.getElementById("example").clientWidth
+    alert(scrollWidth)
+  </script> -->
+
+  <!-- <div id="field">
+    <img src="https://en.js.cx/clipart/ball.svg" id="ball"> . . . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+  </div>
+
+
+  <script>
+    ball.style.left = Math.round(field.clientWidth / 2 - ball.offsetWidth / 2) + "px"
+    ball.style.top = Math.round(field.clientHeight / 2 - ball.offsetHeight / 2) + "px"
+  </script> -->
+
+    <!-- Кликните в любом месте для получения координат в контексте окна.
+    <br> Это для тестирования, чтобы проверить результат, который вы получили с помощью JavaScript.
+    <br>
+    <div id="coords">(координаты покажутся здесь)</div>
+  
+  
+    <div id="field">
+      . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+      . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    </div>
+  
+  
+    <div class="triangle-right" style="left:-20px;top:-176px">1</div>
+    <div class="triangle-right" style="left:-10px;top:-178px">3</div>
+    <div class="triangle-right" style="left:190px;top:-40px">4</div>
+    <div class="triangle-right" style="left:200px;top:-42px">2</div>
+    
+    <script>
+      let coords = elem.getBoundingClientRect()
+
+      let coord1 = [coords.left, coords.top]
+
+      let coord2 = [coords.right, coords.bottom]
+
+      let coord3 = [coords.left + field.clientLeft, coords.top + field.clientTop]
+
+      let answer4 = [
+        coords.left + elem.clientLeft + elem.clientWidth,
+        coords.top + elem.clientTop + elem.clientHeight
+      ]
+    </script>-->
+
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sint atque dolorum fuga ad incidunt voluptatum error fugiat animi amet! Odio temporibus nulla id unde quaerat dignissimos enim nisi rem provident molestias sit tempore omnis recusandae
+      esse sequi officia sapiente.</p>
+  
+    <blockquote>
+      Teacher: Why are you late?
+      Student: There was a man who lost a hundred dollar bill.
+      Teacher: That's nice. Were you helping him look for it?
+      Student: No. I was standing on it.
+    </blockquote>
+  
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sint atque dolorum fuga ad incidunt voluptatum error fugiat animi amet! Odio temporibus nulla id unde quaerat dignissimos enim nisi rem provident molestias sit tempore omnis recusandae
+      esse sequi officia sapiente.</p>
+
+    <script>
+      function positionAt(anchor, position, elem) {
+  
+       let anchorCoords = anchor.getBoundingClientRect()
+
+       if (position == "top") {
+        elem.style.left = anchorCoords.left + "px"
+        elem.style.top = anchorCoords.top - elem.offsetHeight + "px"
+       } else if (position == "right") {
+        elem.style.left = anchorCoords.left + anchor.offsetWidth + "px"
+        elem.style.top = anchorCoords.top + "px"
+       } else if (position == "bottom") {
+        elem.style.left = anchorCoords.left + "px";
+        elem.style.top = anchorCoords.top + anchor.offsetHeight + "px";
+       }
+      }
+
+      function showNote(anchor, position, html) {
+  
+        let note = document.createElement('div');
+        note.className = "note";
+        note.innerHTML = html;
+        document.body.append(note);
+  
+        positionAt(anchor, position, note);
+      }
+
+      let blockquote = document.querySelector('blockquote');
+  
+      showNote(blockquote, "top", "note above");
+      showNote(blockquote, "right", "note at the right");
+      showNote(blockquote, "bottom", "note below");
+    </script> -->
+    
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sint atque dolorum fuga ad incidunt voluptatum error fugiat animi amet! Odio temporibus nulla id unde quaerat dignissimos enim nisi rem provident molestias sit tempore omnis recusandae
+      esse sequi officia sapiente.</p>
+  
+    <blockquote>
+      Teacher: Why are you late?
+      Student: There was a man who lost a hundred dollar bill.
+      Teacher: That's nice. Were you helping him look for it?
+      Student: No. I was standing on it.
+    </blockquote>
+  
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sint atque dolorum fuga ad incidunt voluptatum error fugiat animi amet! Odio temporibus nulla id unde quaerat dignissimos enim nisi rem provident molestias sit tempore omnis recusandae
+      esse sequi officia sapiente.</p>
+
+    <script>
+      function positionAt(anchor, position, elem) {
+  
+       let anchorCoords = getCoords(anchor)
+
+       if (position == "top") {
+        elem.style.left = anchorCoords.left + "px"
+        elem.style.top = anchorCoords.top - elem.offsetHeight + "px"
+       } else if (position == "right") {
+        elem.style.left = anchorCoords.left + anchor.offsetWidth + "px"
+        elem.style.top = anchorCoords.top + "px"
+       } else if (position == "bottom") {
+        elem.style.left = anchorCoords.left + "px";
+        elem.style.top = anchorCoords.top + anchor.offsetHeight + "px";
+       }
+      }
+
+      function getCoords(elem) {
+        let box = elem.getBoundingClientRect();
+
+        return {
+          top: box.top + pageYOffset,
+          left: box.left + pageXOffset
+        };
+      }
+
+      function showNote(anchor, position, html) {
+  
+        let note = document.createElement('div');
+        note.className = "note";
+        note.innerHTML = html;
+        document.body.append(note);
+  
+        positionAt(anchor, position, note);
+      }
+
+      let blockquote = document.querySelector('blockquote');
+  
+      showNote(blockquote, "top", "note above");
+      showNote(blockquote, "right", "note at the right");
+      showNote(blockquote, "bottom", "note below");
+    </script> -->
+    
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sint atque dolorum fuga ad incidunt voluptatum error fugiat animi amet! Odio temporibus nulla id unde quaerat dignissimos enim nisi rem provident molestias sit tempore omnis recusandae
+      esse sequi officia sapiente.</p>
+  
+    <blockquote>
+      Teacher: Why are you late?
+      Student: There was a man who lost a hundred dollar bill.
+      Teacher: That's nice. Were you helping him look for it?
+      Student: No. I was standing on it.
+    </blockquote>
+  
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sint atque dolorum fuga ad incidunt voluptatum error fugiat animi amet! Odio temporibus nulla id unde quaerat dignissimos enim nisi rem provident molestias sit tempore omnis recusandae
+      esse sequi officia sapiente.</p>
+
+    <script>
+      function positionAt(anchor, position, elem) {
+  
+       let anchorCoords = getCoords(anchor)
+
+       if (position == "top-out") {
+        elem.style.left = anchorCoords.left + "px"
+        elem.style.top = anchorCoords.top - elem.offsetHeight + "px"
+       } else if (position == "right-out") {
+        elem.style.left = anchorCoords.left + anchor.offsetWidth + "px"
+        elem.style.top = anchorCoords.top + "px"
+       } else if (position == "bottom-out") {
+        elem.style.left = anchorCoords.left + "px"
+        elem.style.top = anchorCoords.top + anchor.offsetHeight + "px"
+       } else if (position == "top-in") {
+        elem.style.left = anchorCoords.left + "px"
+        elem.style.top = anchorCoords.top + "px"
+       } else if (position == "right-in") {
+        elem.style.left = anchorCoords.left + anchor.offsetWidth - elem.offsetWidth + "px"
+        elem.style.top = anchorCoords.top + "px"
+       } else if (position == "bottom-in") {
+        elem.style.left = anchorCoords.left + "px"
+        elem.style.top = anchorCoords.top + anchor.offsetHeight - elem.offsetHeight + "px"
+      }
+      }
+
+      function getCoords(elem) {
+        let box = elem.getBoundingClientRect();
+
+        return {
+          top: box.top + pageYOffset,
+          left: box.left + pageXOffset
+        };
+      }
+
+      function showNote(anchor, position, html) {
+  
+        let note = document.createElement('div');
+        note.className = "note";
+        note.innerHTML = html;
+        document.body.append(note);
+  
+        positionAt(anchor, position, note);
+      }
+
+      let blockquote = document.querySelector('blockquote');
+  
+      showNote(blockquote, "top-in", "note top-in");
+      showNote(blockquote, "top-out", "note top-out");
+      showNote(blockquote, "right-out", "note right-out");
+      showNote(blockquote, "bottom-in", "note bottom-in");
+    </script> -->
+
+    <!--<input type="button" id="hider" value="Нажмите, чтобы спрятать текст" />
+
+    <div id="text">Текст</div>
+  
+    <script>
+      hider.onclick = function() {
+        const text = document.getElementById("text")
+        text.style.display = "none"
+      }
+    </script>
+
+    <input type="button" id="hiderButton" value="Нажми, чтобы спрятать кнопку" />    
+
+    <script>
+      hiderButton.onclick = function() {
+        const button = document.getElementById("hiderButton")
+        button.style.display = "none"
+      }
+    </script> -->
+
+  <!-- Нажмите на поле для перемещения мяча.
+  <br> Мяч не должен выходить за границы поля.
+
+
+  <div id="field">
+    <img src="https://ru.js.cx/clipart/ball.svg" id="ball"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+  </div>
+
+  <script>
+    field.onclick = function(event) {
+
+      let fieldCoords = this.getBoundingClientRect();
+
+      let ballCoords = {
+        top: event.clientY - fieldCoords.top - field.clientTop - ball.clientHeight / 2,
+        left: event.clientX - fieldCoords.left - field.clientLeft - ball.clientWidth / 2
+      };
+
+      if (ballCoords.top < 0) ballCoords.top = 0;
+
+      if (ballCoords.left < 0) ballCoords.left = 0;
+
+      if (ballCoords.left + ball.clientWidth > field.clientWidth) {
+        ballCoords.left = field.clientWidth - ball.clientWidth;
+      }
+
+      if (ballCoords.top + ball.clientHeight > field.clientHeight) {
+        ballCoords.top = field.clientHeight - ball.clientHeight;
+      }
+
+      ball.style.left = ballCoords.left + 'px';
+      ball.style.top = ballCoords.top + 'px';
+    }
+  </script> -->
+
+  <!-- <div id="menu">▶ Сладости (нажми меня)!</div>
+      <ul id="list">
+        <li>Пирожное</li>
+        <li>Пончик</li>
+        <li>Мёд</li>
+      </ul>
+
+  <script>
+    list.style.display = "none"
+
+    function closeMenu() {
+      menu.innerHTML = "▶ Сладости (нажми меня)!"
+    }
+
+    function openMenu() {
+      menu.innerHTML = "▼ Сладости (нажми меня)!"
+      const list = document.getElementById("list")
+      list.style.display = "list-item"
+    }
+
+    menu.addEventListener("click", closeMenu)
+    menu.addEventListener("click", openMenu)
+  </script> -моё свободное время -->
+
+  <!-- <div id="sweeties" class="menu">
+    <span class="title">Сладости (нажми меня)!</span>
+    <ul>
+      <li>Пирожное</li>
+      <li>Пончик</li>
+      <li>Мёд</li>
+    </ul>
+
+  </div>
+
+  <script>
+    let menuElem = document.getElementById('sweeties');
+    let titleElem = menuElem.querySelector('.title');
+
+    titleElem.onclick = function() {
+      menuElem.classList.toggle('open');
+    };
+  </script> -->
+
+  <!-- <div>
+    <div class="pane">
+      <h3>Лошадь</h3>
+      <p>Домашняя лошадь — животное семейства непарнокопытных, одомашненный и единственный сохранившийся подвид дикой лошади, вымершей в дикой природе, за исключением небольшой популяции лошади Пржевальского.</p>
+    </div>
+    <div class="pane">
+      <h3>Осёл</h3>
+      <p>Домашний осёл (лат. Equus asinus asinus), или ишак, — одомашненный подвид дикого осла (Equus asinus), сыгравший важную историческую роль в развитии хозяйства и культуры человека и по-прежнему широко в хозяйстве многих развивающихся стран.</p>
+    </div>
+    <div class="pane">
+      <h3>Кошка</h3>
+      <p>Кошка, или домашняя кошка (лат. Felis silvestris catus), — домашнее животное, одно из наиболее популярных(наряду с собакой) «животных-компаньонов». Являясь одиночным охотником на грызунов и других мелких животных, кошка — социальное животное, использующее для общения широкий диапазон звуковых сигналов.</p>
+    </div>
+  </div>
+
+
+  <script>
+    let panes = document.querySelectorAll('.pane')
+
+    for(let pane of panes) {
+      pane.insertAdjacentHTML("afterbegin", '<button class="remove-button">[x]</button>')
+      pane.firstChild.onclick = () => pane.remove()
+    }
+  </script> -->
+
+  <!-- <div id="carousel" class="carousel">
+    <button class="arrow prev">⇦</button>
+    <div class="gallery">
+      <ul>
+        <li><img src="https://ru.js.cx/carousel/1.png"></li>
+        <li><img src="https://ru.js.cx/carousel/2.png"></li>
+        <li><img src="https://ru.js.cx/carousel/3.png"></li>
+        <li><img src="https://ru.js.cx/carousel/4.png"></li>
+        <li><img src="https://ru.js.cx/carousel/5.png"></li>
+        <li><img src="https://ru.js.cx/carousel/6.png"></li>
+        <li><img src="https://ru.js.cx/carousel/7.png"></li>
+        <li><img src="https://ru.js.cx/carousel/8.png"></li>
+        <li><img src="https://ru.js.cx/carousel/9.png"></li>
+        <li><img src="https://ru.js.cx/carousel/10.png"></li>
+      </ul>
+    </div>
+    <button class="arrow next">⇨</button>
+  </div>
+
+  <script>
+    let i = 1;
+    for(let li of carousel.querySelectorAll('li')) {
+      li.style.position = 'relative';
+      li.insertAdjacentHTML('beforeend', `<span style="position:absolute;left:0;top:0">${i}</span>`);
+      i++;
+    }
+
+    let width = 130;
+    let count = 3;
+
+    let list = carousel.querySelector('ul');
+    let listElems = carousel.querySelectorAll('li');
+
+    let position = 0;
+
+    carousel.querySelector('.prev').onclick = function() {
+
+      position += width * count;
+      position = Math.min(position, 0)
+      list.style.marginLeft = position + 'px';
+    };
+
+    carousel.querySelector('.next').onclick = function() {
+      position -= width * count;
+      position = Math.max(position, -width * (listElems.length - count));
+      list.style.marginLeft = position + 'px';
+    };
+  </script>
+
+    <div id="container">
+    <div class="pane">
+      <h3>Лошадь</h3>
+      <p>Домашняя лошадь - животное семейства непарнокопытных, одомашненный и единственный сохранившийся подвид дикой лошади, вымершей в дикой природе, за исключением небольшой популяции лошади Пржевальского.</p>
+      <button class="remove-button">[x]</button>
+    </div>
+    <div class="pane">
+      <h3>Осёл</h3>
+      <p>Домашний осёл или ишак — одомашненный подвид дикого осла, сыгравший важную историческую роль в развитии хозяйства и культуры человека. Все одомашненные ослы относятся к африканским ослам.</p>
+      <button class="remove-button">[x]</button>
+    </div>
+    <div class="pane">
+      <h3>Кошка</h3>
+      <p>Кошка, или домашняя кошка (лат. Félis silvéstris cátus), — домашнее животное, одно из наиболее популярных (наряду с собакой) "животных-компаньонов". С точки зрения научной систематики, домашняя кошка — млекопитающее семейства кошачьих отряда хищных. Ранее домашнюю кошку нередко рассматривали как отдельный биологический вид.
+      </p>
+      <button class="remove-button">[x]</button>
+    </div>
+  </div>
+
+  <script>
+    container.onclick = function(event) {
+      if (event.target.className != 'remove-button') return
+      let pane = event.target.closest('.pane')
+      pane.remove()
+    }
+  </script>
+
+<ul class="tree" id="tree">
+  <li>Животные
+    <ul>
+      <li>Млекопитающие
+        <ul>
+          <li>Коровы</li>
+          <li>Ослы</li>
+          <li>Собаки</li>
+          <li>Тигры</li>
+        </ul>
+      </li>
+      <li>Другие
+        <ul>
+          <li>Змеи</li>
+          <li>Птицы</li>
+          <li>Ящерицы</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Рыбы
+    <ul>
+      <li>Аквариумные
+        <ul>
+          <li>Гуппи</li>
+          <li>Скалярии</li>
+        </ul>
+      </li>
+      <li>Морские
+        <ul>
+          <li>Морская форель</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<script>
+  for (let li of tree.querySelectorAll('li')) {
+    let span = document.createElement('span');
+    li.prepend(span);
+    span.append(span.nextSibling);
+  }
+
+  tree.onclick = function(event) {
+
+    if (event.target.tagName != 'SPAN') {
+      return;
+    }
+
+    let childrenContainer = event.target.parentNode.querySelector('ul');
+    if (!childrenContainer) return;
+
+    childrenContainer.hidden = !childrenContainer.hidden;
+  }
+</script>
+
+  </body>
+</html> -->
+
+<!-- <table id="grid">
+  <thead>
+    <tr>
+      <th data-type="number">Возраст</th>
+      <th data-type="string">Имя</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5</td>
+      <td>Вася</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Петя</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Женя</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Маша</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Илья</td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+
+  grid.onclick = function(e) {
+    if (e.target.tagName != 'TH') return;
+
+    let th = e.target;
+
+    sortGrid(th.cellIndex, th.dataset.type);
+  };
+
+  function sortGrid(colNum, type) {
+    let tbody = grid.querySelector('tbody');
+
+    let rowsArray = Array.from(tbody.rows);
+    let compare;
+
+    switch (type) {
+      case 'number':
+        compare = function(rowA, rowB) {
+          return rowA.cells[colNum].innerHTML - rowB.cells[colNum].innerHTML;
+        };
+        break;
+      case 'string':
+        compare = function(rowA, rowB) {
+          return rowA.cells[colNum].innerHTML > rowB.cells[colNum].innerHTML ? 1 : -1;
+        };
+        break;
+    }
+
+    rowsArray.sort(compare);
+
+    tbody.append(...rowsArray);
+  }
+</script> -->
+
+<p>ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя</p>
+<p>ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя ЛяЛяЛя</p>
+
+<button data-tooltip="эта подсказка должна быть длиннее, чем элемент">Короткая кнопка</button>
+<button data-tooltip="HTML<br>подсказка">Ещё кнопка</button>
+
+<p>Прокрутите страницу, чтобы кнопки оказались у верхнего края, а затем проверьте, правильно ли выводятся подсказки.</p>
+
+
+<script>
+  let tooltipElem;
+
+  document.onmouseover = function(event) {
+    let target = event.target;
+
+    let tooltipHtml = target.dataset.tooltip;
+    if (!tooltipHtml) return;
+
+    tooltipElem = document.createElement('div');
+    tooltipElem.className = 'tooltip';
+    tooltipElem.innerHTML = tooltipHtml;
+    document.body.append(tooltipElem);
+
+    let coords = target.getBoundingClientRect();
+
+    let left = coords.left + (target.offsetWidth - tooltipElem.offsetWidth) / 2;
+    if (left < 0) left = 0;
+
+    let top = coords.top - tooltipElem.offsetHeight - 5;
+    if (top < 0) {
+      top = coords.top + target.offsetHeight + 5;
+    }
+
+    tooltipElem.style.left = left + 'px';
+    tooltipElem.style.top = top + 'px';
+  };
+
+  document.onmouseout = function(e) {
+
+    if (tooltipElem) {
+      tooltipElem.remove();
+      tooltipElem = null;
+    }
+
+  };
+</script>
