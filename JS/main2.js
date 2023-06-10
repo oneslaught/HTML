@@ -116,4 +116,4 @@ function removeWinningCellClass() {
 	}
 }
 
-enableClicks()
+enableClicks();
